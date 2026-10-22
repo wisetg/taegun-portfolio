@@ -86,7 +86,7 @@ const PROJECTS = [
 
 const grid = document.getElementById('stageGrid');
 const safe = s => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let currentFilter='all';let lastFocus=null;let playing=false;let audioContext=null;
+let currentFilter='all';let lastFocus=null;
 const visited = (()=>{try{return new Set(JSON.parse(localStorage.getItem('tg-visited')||'[]'))}catch{return new Set()}})();
 
 function artHTML(p) {
@@ -119,8 +119,7 @@ function openProject(id,trigger){
 function hideModal(modalId){document.getElementById(modalId).hidden=true;if(!document.querySelector('.modal-backdrop:not([hidden])'))document.body.classList.remove('modal-open');lastFocus?.focus();}
 document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{beep();currentFilter=btn.dataset.filter;document.querySelectorAll('.filter').forEach(b=>{b.classList.toggle('active',b===btn);b.setAttribute('aria-pressed',b===btn?'true':'false')});render()}));
 const menu=document.getElementById('menuBtn');menu.addEventListener('click',()=>{const nav=document.querySelector('.top-nav');const opened=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(opened))});document.querySelectorAll('.top-nav a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.top-nav').classList.remove('open');menu.setAttribute('aria-expanded','false')}));
-const soundBtn=document.getElementById('soundBtn');soundBtn.addEventListener('click',()=>{playing=!playing;soundBtn.setAttribute('aria-pressed',String(playing));document.getElementById('soundLabel').textContent=playing?'SOUND ON':'SOUND OFF';if(playing)beep()});
-function beep(){if(!playing)return;try{const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;if(!audioContext)audioContext=new AC();const osc=audioContext.createOscillator(),gain=audioContext.createGain();osc.type='square';osc.frequency.setValueAtTime(500,audioContext.currentTime);osc.frequency.exponentialRampToValueAtTime(260,audioContext.currentTime+.07);gain.gain.setValueAtTime(.018,audioContext.currentTime);gain.gain.exponentialRampToValueAtTime(.0001,audioContext.currentTime+.09);osc.connect(gain);gain.connect(audioContext.destination);osc.start();osc.stop(audioContext.currentTime+.10)}catch{}}
+function beep(){}
 document.getElementById('closeModal').addEventListener('click',()=>hideModal('detailModal'));
 document.getElementById('showAward').addEventListener('click',e=>{lastFocus=e.currentTarget;document.getElementById('awardModal').hidden=false;document.body.classList.add('modal-open');document.getElementById('closeAward').focus();beep()});
 document.getElementById('closeAward').addEventListener('click',()=>hideModal('awardModal'));
