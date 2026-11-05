@@ -26,3 +26,56 @@
 
 .modal-gallery{margin-top:24px}.gallery-label{font:9px var(--mono);color:#8d816b;margin-bottom:10px}.gallery-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.gallery-grid a{height:85px;border:1px solid #c1c3b9;display:block;overflow:hidden;background:#e1e4dc}.gallery-grid img{display:block;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .25s}.gallery-grid a:hover img{transform:scale(1.1)}
 @media(max-width:560px){.gallery-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid a{height:105px}}
+
+/* 2026.11 portfolio update: trilingual UI, concise profile, detailed project notes. */
+.language-switch{display:flex;align-items:center;gap:2px;flex:none;padding:3px;border:1px solid #b2b7a9;background:#edece5;border-radius:3px;margin-left:auto}
+.language-switch button{appearance:none;border:0;background:transparent;color:#58635c;min-width:34px;min-height:34px;padding:7px 9px;font:600 10px var(--mono);letter-spacing:.06em;cursor:pointer;border-radius:2px;transition:background .2s,color .2s}
+.language-switch button.active,.language-switch button[aria-pressed="true"]{background:var(--ink);color:#f4ebd5}
+.language-switch button:not(.active):hover{background:#d9ded2;color:var(--ink)}
+.language-switch button:focus-visible{outline:2px solid #b87b42;outline-offset:3px}
+.profile-panel .profile-small{margin-top:25px}
+#projectsTitle{overflow-wrap:anywhere}
+.project-insights{margin-top:25px;padding-top:25px;border-top:1px solid #b5b8af}
+.project-insights>h3{font:600 11px var(--mono);letter-spacing:.08em;color:#647368;margin:0 0 18px}
+.insight-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.insight{border:1px solid #d6d6cb;background:#f1f0e9;padding:16px 15px;min-width:0}
+.insight h4{font-size:12px;font-weight:800;color:#35423a;line-height:1.5;margin:0 0 8px}
+.insight p{font-size:11px;line-height:1.85;color:#647067;word-break:keep-all;margin:0}
+.no-public-link{font:10px var(--mono);color:#788276;line-height:1.8;margin:0}
+.stage-meta{flex-wrap:wrap;row-gap:5px}
+.scene-prompt{pointer-events:none}
+/* A few Japanese headings are longer than the former English arcade labels. */
+html[lang="ja"] .section h2{letter-spacing:-.075em}
+html[lang="ja"] .stage-info p{word-break:keep-all}
+@media(max-width:1050px){
+  .top-nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--paper);padding:22px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--border);box-shadow:0 12px 20px #0001;z-index:40}
+  .top-nav.open{display:flex}
+  .mobile-menu{display:block}
+  .language-switch{margin-left:auto}
+}
+@media(max-width:660px){
+  .site-header{gap:9px;padding-left:16px;padding-right:16px}
+  .language-switch{gap:0;padding:2px}
+  .language-switch button{min-width:29px;min-height:30px;padding:6px 5px;font-size:10px}
+  .mark-copy{font-size:11px;letter-spacing:.035em}
+  .mark-copy span{font-size:7px}
+  .insight-grid{grid-template-columns:1fr;gap:8px}
+  .insight{padding:13px 15px}
+}
+@media(max-width:380px){
+  .site-header{padding-left:12px;padding-right:12px}
+  .mark-copy{font-size:10px}
+  .mark-copy span{font-size:6px}
+}
+/* Prevent long translated paragraphs from expanding the mobile grid. */
+@media(max-width:1050px){
+  .about-layout{grid-template-columns:minmax(0,1fr)}
+  .about-main,.profile-panel,.info-rows,.info-rows>div{min-width:0;max-width:100%}
+  .about-main blockquote,.about-main>p,.info-rows strong,.info-rows small{overflow-wrap:anywhere;word-break:normal}
+}
+@media(max-width:560px){
+  .profile-panel{width:100%}
+  .hero-visual,.hero{overflow:hidden}
+}
+html[lang="ja"] .stage-info p{word-break:normal;overflow-wrap:anywhere}
+.stage-meta span{overflow-wrap:anywhere}
