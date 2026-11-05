@@ -1,3 +1,14 @@
+## v5 — GitHub Pages 캐시 대응 수정 (2026.11)
+
+- 기존 저장소의 JavaScript와 최신 portfolio-data.js가 브라우저 캐시에서 혼합되지 않도록 **새로운 파일명** 사용: `app-v5.js`, `portfolio-data-v5.js`, `styles-v5.css`.
+- HTML 원본의 이전 제목 `SELECT YOUR STAGE`를 `포트폴리오`로 바로 수정.
+- GitHub Pages 재배포 시 **이 ZIP의 루트 파일 모두 업로드**: `index.html`, `app-v5.js`, `portfolio-data-v5.js`, `styles-v5.css`, `README.md`, `assets/`.
+- 기존 `app.js`, `portfolio-data.js`, `styles.css`는 삭제하지 않아도 됩니다. 새 HTML은 새 파일만 불러옵니다.
+- 배포 확인: `https://wisetg.github.io/taegun-portfolio/?v=5` (배포 성공 후 접속).
+- 원본 저장소는 여기서 자동 수정하지 않았습니다.
+
+---
+
 # TAEGUN PARK · PORTFOLIO
 
 게임 기획과 소프트웨어 개발 경험을 소개하는 **한국어 / 영어 / 일본어 지원 반응형 정적 사이트**입니다. 이전에 제작한 레트로 게임 테마를 유지하면서 대표 프로젝트 5개를 선별했습니다.
