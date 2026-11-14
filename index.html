@@ -1,85 +1,85 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="ko">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="#141a1a" name="theme-color"/>
-<meta content="Taegun Park — 게임의 규칙과 경험을 기획하고, 코드로 구현하는 개발자 포트폴리오." name="description"/>
-<meta content="TAEGUN PARK — PORTFOLIO" property="og:title"/>
-<meta content="Game planning · Level design · Software engineering" property="og:description"/>
-<title>TAEGUN PARK — PORTFOLIO</title>
-<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:wght@400;500;600;700;800&amp;family=Noto+Sans+KR:wght@400;500;600;700;800;900&amp;family=Press+Start+2P&amp;display=swap" rel="stylesheet"/>
-<link href="styles-v5.css" rel="stylesheet"/>
-<script defer src="portfolio-data-v5.js"></script><script defer src="app-v5.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4f0">
+  <meta name="description" content="박태건 — 게임 기획과 레벨 디자인, 소프트웨어 개발 포트폴리오.">
+  <title>TAEGUN PARK — Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="project-data.js"></script>
+  <script defer src="image-config.js"></script>
+  <script defer src="app.js"></script>
 </head>
 <body>
-<a class="skip-link" data-i18n="skip" href="#projects">프로젝트로 바로가기</a>
-<div aria-hidden="true" class="scanline"></div>
+<a class="skip-link" href="#works" data-t="skip">본문으로 이동</a>
 <header class="site-header" id="top">
-<a aria-label="처음으로 돌아가기" class="mark" href="#top"><span class="mark-copy">TAEGUN PARK<span data-i18n="roleHeader">GAME PLANNER / DEVELOPER</span></span></a>
-<nav aria-label="메인 메뉴" class="top-nav">
-<a data-i18n="navWork" href="#projects">01 / WORKS</a><a data-i18n="navAbout" href="#about">02 / ABOUT</a><a data-i18n="navRecords" href="#records">03 / RECORDS</a><a data-i18n="navContact" href="#contact">04 / CONTACT</a>
-</nav><div aria-label="Website language / 언어 선택 / 言語選択" class="language-switch" role="group"><button aria-pressed="true" data-lang="ko" title="한국어" type="button">KR</button><button aria-pressed="false" data-lang="en" title="English" type="button">EN</button><button aria-pressed="false" data-lang="ja" title="日本語" type="button">JP</button></div>
-<button aria-expanded="false" aria-label="메뉴 열기" class="mobile-menu" data-i18n-aria="menuOpenAria" id="menuBtn" type="button"><span></span><span></span></button>
+  <div class="header-inner">
+    <a class="wordmark" href="#top" aria-label="Taegun Park, home">TAEGUN PARK<span class="wordmark-dot">.</span><small>DESIGN & DEVELOPMENT</small></a>
+    <nav class="header-nav" aria-label="Primary navigation">
+      <a href="#works" data-t="navWorks">작업</a>
+      <a href="#about" data-t="navAbout">소개</a>
+      <a href="#records" data-t="navRecords">기록</a>
+      <a href="#contact" data-t="navContact">연락처</a>
+    </nav>
+    <div class="header-right">
+      <div class="language-switch" role="group" aria-label="언어 선택">
+        <button type="button" data-lang="ko" aria-pressed="true">KR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="ja" aria-pressed="false">JP</button>
+      </div>
+      <button class="mobile-menu" type="button" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
 </header>
 <main>
-<section aria-labelledby="heroTitle" class="hero">
-<div class="hero-copy">
-<div class="eyebrow"><span class="status-pip"></span> PORTFOLIO / SAVE FILE 01 <span class="divider-symbol">✳</span> SEOUL, KR</div>
-<div class="hero-kicker" data-i18n="heroKicker">NEW GAME +</div>
-<h1 data-i18n-html="heroTitle" id="heroTitle">아이디어를<br/><em>플레이로.</em></h1>
-<p class="hero-en" data-i18n="heroSlogan">I THINK. I BUILD.</p>
-<p class="hero-description" data-i18n-html="heroDescription">게임의 세계를 상상하는 것에서 멈추지 않고, 플레이어의 움직임과 시스템을 설계해 직접 구현합니다. 게임 기획과 소프트웨어 개발 사이를 오가는 <strong>박태건</strong>입니다.</p>
-<div class="hero-actions"><a class="pixel-button primary" data-i18n-html="heroStart" href="#projects"><span class="triangle">▶</span> START / 작품 둘러보기</a><a class="pixel-button secondary" data-i18n-html="heroAbout" href="#about">VIEW PLAYER DATA <span aria-hidden="true">↗</span></a></div>
-<div class="hero-footnote"><span data-i18n="scroll">SCROLL TO EXPLORE</span><div class="tiny-line"></div><span>2026.11 UPDATE</span></div>
-</div>
-<div class="hero-visual">
-<div class="game-chrome">
-<div class="game-topbar"><span data-i18n-html="nowPlaying"><i class="led"></i> NOW PLAYING</span><span data-i18n-html="gameStage">STAGE 00 — BEGINNING <b>✕</b></span></div>
-<div aria-label="한밤의 픽셀 아트 도시와 플레이어 캐릭터가 있는 레트로 게임 장면" class="scene" data-i18n-aria="sceneAlt" role="img">
-<div class="sky-grain"></div><div class="moon"></div>
-<div class="skyline skyline-back"></div><div class="skyline skyline-mid"></div>
-<div class="building one"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-<div class="building two"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-<div class="building three"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-<div class="power-line line1"></div><div class="power-line line2"></div>
-<div class="character"><div class="head"></div><div class="hair"></div><div class="body"></div><div class="arm"></div><div class="leg leg1"></div><div class="leg leg2"></div><div class="shadow"></div></div>
-<div class="scene-ground"></div>
-<div class="scene-hud"><span>HP ■ ■ ■</span><span>01 / ∞</span></div>
-<div class="scene-prompt" data-i18n-html="scenePrompt">PRESS <kbd>START</kbd> TO EXPLORE_</div>
-<div class="scene-caption" data-i18n="sceneCaption">A LITTLE WORLD, BUILT ONE DECISION AT A TIME.</div>
-</div>
-<div class="game-bottom"><span data-i18n="gameBottom">© TG. // PLAYER ONE</span><span class="game-bullets">● <i></i> ●</span><span data-i18n="gameBottomRight">INSERT CURIOSITY ↵</span></div>
-</div>
-<div class="corner-number">00</div>
-</div>
-</section>
-<div class="tape"><div aria-hidden="true" class="tape-track" data-i18n-html="tape">STORY   ✳   SYSTEM   ✳   LEVEL DESIGN   ✳   CODE   ✳   STORY   ✳   SYSTEM   ✳   LEVEL DESIGN   ✳   CODE   ✳</div></div>
-<section aria-labelledby="projectsTitle" class="section projects-section" id="projects">
-<div class="section-top"><div><div class="section-eyebrow" data-i18n="workEyebrow">01 / PORTFOLIO</div><h2 data-i18n-html="workTitle" id="projectsTitle">포트폴리오<span class="period">.</span></h2><p data-i18n="workIntro">가장 많은 고민을 담았던 작업부터 차례로 꺼내 보았습니다. 카드를 클릭하면 세부 기록을 볼 수 있어요.</p></div><div class="section-counter"><span id="projectCount">05</span><small data-i18n-html="workCounter">PROJECTS<br/>← → 탐색 · ENTER 열기</small></div></div>
-<div aria-label="프로젝트 필터" class="filter-row" data-i18n-aria="filterAria" role="group"><button aria-pressed="true" class="filter active" data-filter="all" data-i18n-html="filterAll">전체 프로젝트 <span id="countAll">05</span></button><button aria-pressed="false" class="filter" data-filter="game" data-i18n="filterGame">게임 기획</button><button aria-pressed="false" class="filter" data-filter="software" data-i18n="filterSoftware">소프트웨어</button><button aria-pressed="false" class="filter" data-filter="research" data-i18n="filterResearch">연구 · 아트</button></div>
-<div class="stage-grid" id="stageGrid"></div>
-<noscript><div class="project-offline-fallback"><p>프로젝트 목록을 보려면 브라우저에서 JavaScript를 사용하도록 설정해 주세요.</p><ul><li>Project SilverBullet</li><li>Titanomachia</li><li><a href="https://wisetg.github.io/FantasyDraft/">FantasyDraft — 데모</a></li><li>Open-Ended AI Art</li><li><a href="https://github.com/JinnyLyn/SoftBank-Hackathon">Paved Clouds — GitHub</a></li></ul></div></noscript>
-<div class="project-note" data-i18n-html="workNote"><span>↳</span> 모든 작품은 개인/팀 프로젝트입니다. 담당 영역과 제작 현황을 구분해서 기록했습니다. <a href="https://github.com/wisetg?tab=repositories" rel="noopener noreferrer" target="_blank">GITHUB / ALL REPOSITORIES ↗</a></div>
-</section>
-<section aria-labelledby="aboutTitle" class="about-wrap" id="about"><div class="section about">
-<div class="section-eyebrow" data-i18n="aboutEyebrow">02 / PLAYER DATA</div><h2 data-i18n-html="aboutTitle" id="aboutTitle">THE HUMAN <span>BEHIND</span> THE GAME<span class="period">.</span></h2>
-<div class="about-layout"><div class="profile-panel"><div class="profile-top"><div aria-hidden="true" class="profile-portrait"><span class="portrait-asterisk">✳</span><span class="portrait-code">01</span><div class="portrait-silhouette"><div></div></div></div><div class="profile-stamp" data-i18n="profileStamp">P1 / ACTIVE</div></div><div class="profile-name" data-i18n-html="profileName">박태건 <span>TAEGUN PARK</span></div><p data-i18n="profileRole">GAME PLANNER / SOFTWARE DEVELOPER</p><div class="profile-small" data-i18n="profileCaption">취향은 서사와 시스템, 습관은 기록과 구현.</div></div>
-<div class="about-main"><blockquote data-i18n-html="aboutQuote">“좋은 아이디어는 플레이어가 직접 <em>경험할 수 있을 때</em> 비로소 완성된다고 믿습니다.”</blockquote><p data-i18n-html="aboutParagraph1">소프트웨어를 공부하면서 자연스럽게 시스템을 만드는 즐거움을 배웠습니다. 그리고 팀 게임을 제작하면서, 코드 한 줄과 맵의 작은 배치가 플레이어의 감정과 선택을 얼마나 크게 바꿀 수 있는지 알게 되었습니다.</p><p data-i18n-html="aboutParagraph2">게임의 <strong>스토리·연출·레벨 디자인</strong>을 기획하고, Unity와 웹 기술로 실제 움직이는 형태까지 구현합니다. 서로 다른 의견을 모아 실험 가능한 형태로 만드는 협업을 중요하게 생각합니다.</p><div class="info-rows"><div><span data-i18n="eduLabel">EDUCATION</span><strong data-i18n="eduSchool">한국항공대학교 소프트웨어학과</strong><small data-i18n="eduWhen">2021.03 — 2027.02 졸업 예정</small></div><div><span data-i18n="experienceLabel">EXPERIENCE</span><strong data-i18n="experienceName">대한민국 육군 제25사단</strong><small data-i18n="experienceWhen">2023.05 — 2024.11 / 만기 전역</small></div><div><span data-i18n="interestLabel">INTERESTS</span><strong data-i18n="interestName">게임 시스템 · 레벨 디자인 · 스토리텔링 · 스포츠 데이터</strong><small data-i18n="interestNote">새로운 경험을 관찰하고 기록하는 것을 좋아합니다.</small></div></div></div></div>
-<div class="skills-block"><div><div class="mini-title" data-i18n-html="skillsTitle">EQUIPPED SKILLS <span>/ PRESS TAB TO INSPECT</span></div><div class="skills-sub" data-i18n="skillsDescription">직접 경험한 도구를 작업 맥락에 따라 정리했습니다.</div></div><div class="skill-rows"><div><span data-i18n="skillsGame">GAME / CREATIVE</span><div><b>Unity</b><b>C#</b><b>Level Design</b><b>Game Planning</b><b>Figma</b><b>Notion</b></div></div><div><span data-i18n="skillsWeb">WEB / BACKEND</span><div><b>Java</b><b>Spring Boot</b><b>React</b><b>JavaScript</b><b>Python</b><b>PostgreSQL</b><b>Firebase</b></div></div><div><span data-i18n="skillsCloud">CLOUD / TOOLS</span><div><b>AWS EC2</b><b>RDS</b><b>Lambda</b><b>Docker</b><b>Git / GitHub</b><b>Terraform (Hackathon)</b></div></div></div></div>
-</div></section>
-<section aria-labelledby="recordsTitle" class="section records-section" id="records"><div class="section-eyebrow" data-i18n="recordsEyebrow">03 / ACHIEVEMENT UNLOCKED</div><div class="records-head"><h2 data-i18n-html="recordsTitle" id="recordsTitle">SAVE <span>RECORDS</span><span class="period">.</span></h2><p data-i18n-html="recordsIntro">수상, 연구, 어학·자격을 연월과 함께 남겼습니다.<br/>획득 기록과 진행 중인 이력은 구분했습니다.</p></div>
-<div class="records-layout"><div class="achievements"><div class="records-label" data-i18n-html="achievementsLabel">ACHIEVEMENTS / HIGHLIGHTS <span>01—03</span></div><article class="achievement-card"><div class="ach-icon">★</div><div><span class="record-date">2025.12</span><h3 data-i18n-html="awardTitle">제4회 교내 테트리스 게임톤 <em>최우수상</em></h3><p data-i18n="awardDescription">한국항공대학교 · Team Makers / Titanomachia</p><button class="text-button" data-i18n="awardButton" id="showAward" type="button">상장 보기 ↗</button></div></article><article class="achievement-card"><div class="ach-icon hollow">✳</div><div><span class="record-date">2026.08</span><h3>Design of Open-Ended Biosignal Synchrony Art</h3><p data-i18n="paperDescription">IICCC 2026 학술대회 논문 등록 · 공동저자</p><small data-i18n="paperNote">논문 등록 기록으로, 수상 실적과 구분합니다.</small></div></article><article class="achievement-card"><div class="ach-icon hollow">◇</div><div><span class="record-date">2026.10</span><h3 data-i18n="hackathonTitle">SoftBank Cloud Hackathon 참가</h3><p data-i18n="hackathonDescription">한국·일본 팀 협업 · Paved Clouds 배포 서비스 기획·개발</p></div></article></div>
-<div class="certs"><div class="records-label" data-i18n-html="certificatesLabel">LICENSES &amp; LANGUAGE <span>YYYY.MM</span></div><div class="cert-table"><div class="cert-row"><span>2021.05</span><div><strong data-i18n="certLicense">자동차운전면허 2종 보통</strong><small data-i18n="certLicenseNote">취득</small></div></div><div class="cert-row"><span>2022.02</span><div><strong data-i18n="certToeicOld">TOEIC 875점</strong><small data-i18n="certToeicOldNote">과거 응시 기록 · 현재 유효 성적으로 표시하지 않음</small></div></div><div class="cert-row"><span>2023.02</span><div><strong data-i18n="certCosPro">COS Pro 2급 (Python)</strong><small data-i18n="certCosNote">취득 · YBM (이력서 기준)</small></div></div><div class="cert-row"><span>2024.06</span><div><strong data-i18n="certInfo">정보처리기능사 필기 합격</strong><small data-i18n="certInfoNote">필기 합격만 기재 · 최종 자격 취득 아님</small></div></div><div class="cert-row"><span>2024.10</span><div><strong data-i18n="certOpic">OPIc IH</strong><small data-i18n="certOpicNote">영어 · 2026.10.03 유효기간 만료</small></div></div><div class="cert-row"><span>2026.08</span><div><strong data-i18n="certToeicNew">TOEIC 835점</strong><small data-i18n="certToeicNewNote">영어 · 2026.08.23 응시</small></div></div></div></div></div>
-<div class="timeline-heading"><span data-i18n="timelineTitle">ADDITIONAL XP / ACTIVITIES</span><span data-i18n="timelineMore">KEEP GOING ↓</span></div><div class="timeline"><div class="timeline-item"><span>2026.10</span><strong data-i18n="xpCloudTitle">SoftBank Cloud Hackathon</strong><p data-i18n="xpCloudDesc">클라우드 앱 배포 문제를 해결하는 팀 프로젝트 참가</p></div><div class="timeline-item"><span>2026.03 —</span><strong data-i18n="xpArtTitle">Open-Ended AI Art</strong><p data-i18n="xpArtDesc">실시간 데이터와 셀룰러 오토마타를 활용한 미디어 아트 연구 및 구현</p></div><div class="timeline-item"><span>2025.06 —</span><strong data-i18n="xpTeamTitle">팀 게임 프로젝트</strong><p data-i18n="xpTeamDesc">6인 협업 게임 제작·교내 최우수상·차기 작품 개발</p></div><div class="timeline-item"><span>2021.04 — 2021.11</span><strong data-i18n="xpClubTitle">로켓제작 동아리 SRS · 대학 야구부</strong><p data-i18n="xpClubDesc">고체연료 모형 로켓 제작·발사, 야구부 훈련 활동</p></div></div>
-</section>
-<section class="contact" id="contact"><div aria-hidden="true" class="contact-pattern">✳ ✳ ✳</div><div class="section-eyebrow" data-i18n="contactEyebrow">04 / THE NEXT LEVEL</div><h2 data-i18n-html="contactTitle">MAKE SOMETHING<br/><em>WORTH PLAYING.</em></h2><p data-i18n="contactDescription">함께 재미있는 문제를 정의하고, 직접 플레이할 수 있는 결과로 만들어 가고 싶습니다.</p><div class="contact-buttons"><a class="pixel-button contact-primary" data-i18n="contactEmail" href="mailto:ptg0418@gmail.com">✉ EMAIL ME ↗</a><a class="pixel-button contact-ghost" href="https://github.com/wisetg" rel="noopener noreferrer" target="_blank">GITHUB ↗</a><a class="pixel-button contact-ghost" href="https://www.linkedin.com/in/taegun-park-666827398" rel="noopener noreferrer" target="_blank">LINKEDIN ↗</a></div><div class="contact-end"><span data-i18n="contactThanks">THANKS FOR PLAYING.</span><span data-i18n-html="contactFoot">© <span id="copyrightYear">2026</span> TAEGUN PARK <span class="spark">✳</span> MADE WITH PATIENCE</span></div></section>
+  <section class="intro-section wrap" aria-labelledby="intro-heading">
+    <div class="intro-meta"><span class="indicator"></span><span data-t="eyebrow">GAME DESIGN / SOFTWARE DEVELOPMENT</span></div>
+    <div class="intro-grid">
+      <h1 id="intro-heading" data-th="hero">이야기를 구상하고,<br><em>움직이는 경험으로</em> 만듭니다.</h1>
+      <div class="intro-aside"><div class="aside-number">01 <span> / 05</span></div><p data-t="heroParagraph">영화에서 장면을 보는 법을 배웠고, 게임 제작에서 선택과 동선의 흐름을 고민했습니다. 스토리와 레벨 디자인을 중심으로, 필요하다면 직접 코드를 작성합니다.</p><div class="intro-byline">TAEGUN PARK <span>—</span> SEOUL, KOREA</div></div>
+    </div>
+  </section>
+
+  <section class="works-section wrap" id="works" aria-labelledby="works-heading">
+    <div class="section-heading"><div><span class="micro" data-t="worksLabel">01 — SELECTED WORK</span><h2 id="works-heading" data-t="worksTitle">포트폴리오</h2></div><p data-t="worksDescription">참여한 프로젝트 중 역할과 고민을 분명하게 보여줄 수 있는 다섯 가지 작업을 골랐습니다.</p></div>
+    <div class="work-list" id="workList" aria-live="polite"></div>
+    <noscript><p>이 페이지의 프로젝트 상세 내용은 JavaScript가 활성화된 브라우저에서 볼 수 있습니다.</p></noscript>
+  </section>
+
+  <section class="about-section" id="about" aria-labelledby="about-heading"><div class="wrap about-grid">
+    <div class="section-heading compact"><div><span class="micro" data-t="aboutLabel">02 — ABOUT</span><h2 id="about-heading" data-t="aboutTitle">소개</h2></div></div>
+    <div class="about-content"><p class="about-statement" data-th="aboutStatement">좋아하는 것을 유심히 보고,<br>그 이유를 <em>구조로 풀어냅니다.</em></p><p data-t="aboutP1">영화의 장면 구성과 게임의 서사를 좋아합니다. 실제 게임을 제작하면서 이야기가 공간과 규칙, 플레이어의 선택을 통해 전달될 수 있다는 점을 배웠습니다.</p><p data-t="aboutP2">6인 팀에서 스토리와 레벨 디자인을 맡아 게임을 완성했고, 개인 개발에서는 데이터 분석부터 웹 서비스 배포까지 경험했습니다. 기획 의도를 구현 가능한 형태로 정리하고 서로 다른 직군의 생각을 연결하는 일을 중요하게 생각합니다.</p><div class="about-facts"><div><span data-t="factSchool">학력</span><strong data-t="school">한국항공대학교 소프트웨어학과</strong><small data-t="schoolDate">2021.03 — 2027.02 졸업 예정</small></div><div><span data-t="factService">병역</span><strong data-t="service">대한민국 육군 제25사단</strong><small data-t="serviceDate">2023.05 — 2024.11, 만기 전역</small></div><div><span data-t="factFocus">관심 분야</span><strong data-t="focus">스토리텔링 · 레벨 디자인 · 시스템 · 데이터</strong><small data-t="focusSub">게임과 소프트웨어를 함께 공부합니다.</small></div></div></div>
+  </div></section>
+
+  <section class="records-section wrap" id="records" aria-labelledby="records-heading"><div class="section-heading"><div><span class="micro" data-t="recordsLabel">03 — RECORDS</span><h2 id="records-heading" data-t="recordsTitle">경험과 기록</h2></div><p data-t="recordsDescription">수상과 학술 활동, 자격을 구분해 기록했습니다. 어학 성적의 취득 시기도 함께 표기했습니다.</p></div>
+    <div class="records-grid">
+      <div class="record-group"><h3 data-t="highlightTitle">주요 활동</h3>
+        <article class="record-row"><time>2025.12</time><div><strong data-t="awardTitle">제4회 한국항공대학교 테트리스 게임톤 — 최우수상</strong><p data-t="awardDesc">6인 팀 프로젝트 Titanomachia · 게임 기획 및 레벨 디자인</p><button class="quiet-link" type="button" id="showAward" data-t="viewAward">상장 확인 ↗</button></div></article>
+        <article class="record-row"><time>2026.08</time><div><strong>Design of Open-Ended Biosignal Synchrony Art</strong><p data-t="paperDesc">IICCC 2026 학술대회 논문 등록 · 공동저자 (수상 아님)</p></div></article>
+        <article class="record-row"><time>2026.10</time><div><strong data-t="cloudActivity">SoftBank Cloud Hackathon</strong><p data-t="cloudDesc">관리형 클라우드 배포 서비스 기획·백엔드 개발 참여</p></div></article>
+      </div>
+      <div class="record-group"><h3 data-t="credentialsTitle">자격 · 어학</h3>
+        <article class="record-row"><time>2021.05</time><div><strong data-t="license">자동차운전면허 2종 보통</strong></div></article>
+        <article class="record-row"><time>2022.02</time><div><strong>TOEIC 875</strong><p data-t="oldToeic">이전 취득 기록 · 유효기간 만료</p></div></article>
+        <article class="record-row"><time>2023.02</time><div><strong>COS Pro Level 2 (Python)</strong><p data-t="cosNote">YBM · 취득</p></div></article>
+        <article class="record-row"><time>2024.06</time><div><strong data-t="infoExam">정보처리기능사 필기 합격</strong><p data-t="infoExamDesc">필기 시험 합격 · 최종 자격 취득 아님</p></div></article>
+        <article class="record-row"><time>2024.10</time><div><strong>OPIc IH</strong><p data-t="opicNote">영어 · 유효기간 만료</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="wrap contact-inner">
+    <div><span class="micro" data-t="contactLabel">04 — CONTACT</span><h2 id="contact-heading" data-th="contactHeading">새로운 이야기를<br><em>함께 만들어 보고 싶습니다.</em></h2><p data-t="contactDesc">게임 기획, 개발, 협업 제안에 열려 있습니다.</p></div>
+    <div class="contact-info"><div class="contact-text" data-t="contactSmall">연락은 아래 채널로 부탁드립니다.</div><a class="contact-mail" href="mailto:ptg0418@gmail.com">ptg0418@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-external"><a href="https://github.com/wisetg" target="_blank" rel="noopener noreferrer">GITHUB <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/taegun-park-666827398" target="_blank" rel="noopener noreferrer">LINKEDIN <span aria-hidden="true">↗</span></a></div></div>
+  </div></section>
 </main>
-<div class="modal-backdrop" hidden="" id="detailModal"><section aria-labelledby="detailTitle" aria-modal="true" class="detail-modal" role="dialog"><div class="modal-head"><span id="detailNumber">STAGE 01 / DETAILS</span><button aria-label="상세 정보 닫기" data-i18n="close" id="closeModal" type="button">ESC / CLOSE ✕</button></div><div class="modal-art" id="detailArt"></div><div class="modal-body"><div class="modal-meta" id="detailMeta"></div><h2 id="detailTitle"></h2><p class="modal-lead" id="detailLead"></p><div class="modal-columns"><div><h3 data-i18n="modalRole">MY ROLE</h3><p id="detailRole"></p></div><div><h3 data-i18n="modalTasks">WHAT I WORKED ON</h3><ul id="detailTasks"></ul></div></div><div aria-live="polite" class="project-insights" id="detailInsights"></div><div class="modal-bottom"><div class="modal-tags" id="detailTags"></div><div class="modal-gallery" id="detailGallery"></div><div class="modal-links" id="detailLinks"></div></div></div></section></div>
-<div class="modal-backdrop" hidden="" id="awardModal"><div aria-label="테트리스 게임톤 최우수상 상장" aria-modal="true" class="award-modal" data-i18n-aria="awardModalAria" role="dialog"><div class="modal-head"><span>ACHIEVEMENT UNLOCKED / 2025.12</span><button data-i18n="close" id="closeAward" type="button">ESC / CLOSE ✕</button></div><img alt="2025년 12월 2일 한국항공대학교 제4회 테트리스 게임톤 최우수상 상장" loading="lazy" src="assets/tetris-award.jpg"/><p data-i18n="awardCaption">한국항공대학교 제4회 테트리스 게임톤 · 2025.12.02</p></div></div>
-</body>
-</html>
+<footer class="site-footer"><div class="wrap"><span>© 2026 TAEGUN PARK</span><span data-t="footerNote">게임 기획 · 소프트웨어 개발</span></div></footer>
+
+<div class="overlay" id="projectOverlay" hidden><div class="overlay-scrim" data-close="project"></div><section class="project-panel" role="dialog" aria-modal="true" aria-labelledby="detailTitle"><div class="panel-bar"><span data-t="caseStudy">PROJECT NOTES</span><button type="button" id="closeProject" class="close-button" aria-label="Close project">×</button></div><div class="panel-scroll"><div id="detailImage"></div><div class="panel-content"><p class="micro" id="detailMeta"></p><h2 id="detailTitle"></h2><p class="detail-lead" id="detailLead"></p><div class="panel-block"><h3 data-t="detailRoleLabel">담당 역할</h3><p id="detailRole"></p></div><div class="panel-block"><h3 data-t="detailTasksLabel">작업 내용</h3><ul id="detailTasks"></ul></div><div class="panel-block" id="detailInsights"></div><div class="panel-block"><h3 data-t="detailStackLabel">사용 기술</h3><div class="tags" id="detailTags"></div></div><div class="panel-external" id="detailLinks"></div></div></div></section></div>
+<div class="overlay" id="awardOverlay" hidden><div class="overlay-scrim" data-close="award"></div><section class="award-panel" role="dialog" aria-modal="true" aria-label="Award image"><div class="panel-bar"><span data-t="awardDoc">AWARD / 2025.12</span><button type="button" class="close-button" id="closeAward" aria-label="Close award">×</button></div><img src="assets/tetris-award.jpg" alt="2025 한국항공대학교 테트리스 게임톤 최우수상 상장" loading="lazy"></section></div>
+</body></html>
